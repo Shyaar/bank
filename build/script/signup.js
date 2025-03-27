@@ -84,7 +84,8 @@ if (!valid){
             password,
             accountNum,
             accountbalance: 0,
-            reffcode: `OC12-${accountNum}`
+            reffcode: `OC12-${accountNum}`,
+            history:[]
         }
         if(referral){
             let refree = users.find(user => user.reffcode == referral)

@@ -22,6 +22,7 @@ let loggedUserAccount = users[loggedUserIndex].accountNum
 
 
 let history = users[loggedUserIndex].history
+console.log()
 
 
 let date = new Date()
@@ -59,7 +60,6 @@ function updateHistory(){
     recent.innerHTML = ""
   
   users[loggedUserIndex].history.forEach(history => {
-
 
     let displayName = null
     
