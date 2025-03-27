@@ -1,7 +1,14 @@
 let users = JSON.parse(localStorage.getItem("users"));
 console.log(users)
 
-let loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+let loggedInUser = JSON.parse(localStorage.getItem("loggedInUser")) || [];
+
+console.log(loggedInUser)
+
+if (loggedInUser == "" ) {
+  window.location.href = "login.html";
+  console.log("null")
+}
 
 let loggedUserIndex = users.indexOf(
   users.find((user) => loggedInUser.accountNum == user.accountNum)
@@ -25,9 +32,7 @@ date = `${date.getDate()}-${date.getDay()}-${date.getFullYear()}`
 time = `${time.getHours()}: ${time.getMinutes()}`
 
 
-if (loggedInUser == null) {
-  window.location.href = "login.html";
-}
+
 
 
 let greeting = document.getElementById("loggedUser");
@@ -64,7 +69,7 @@ function updateHistory(){
     }else
     
     if(history.transaction == "transfer-In"){
-      displayName = history.sender
+      displayName = history.sentFrom
 
     }else
     {
