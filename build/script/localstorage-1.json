@@ -1,0 +1,37 @@
+[
+  {
+    "firstName": "Siri",
+    "lastName": "monore",
+    "email": "siri@mail.com",
+    "dateOfBirth": "1990-11-11",
+    "password": "1111",
+    "accountNum": 90946247114,
+    "accountbalance": 119300,
+    "reffcode": "OC12-90946247114",
+    "history": [
+
+    ]
+  },
+  {
+    "firstName": "Chris",
+    "lastName": "Woods",
+    "email": "woods@mail.com",
+    "dateOfBirth": "1909-12-11",
+    "password": "2222",
+    "accountNum": 89438037278,
+    "accountbalance": 0,
+    "reffcode": "OC12-89438037278",
+    "history": []
+  },
+  {
+    "firstName": "sarah",
+    "lastName": "Abraham",
+    "email": "monroe@mail.com",
+    "dateOfBirth": "1994-12-11",
+    "password": "2222",
+    "accountNum": 37918075749,
+    "accountbalance": 10,
+    "reffcode": "OC12-37918075749",
+    "history": []
+  }
+]

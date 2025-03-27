@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="/build/css/style.css">
+</head>
+<body class="bg-[url(https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-54581.jpg?ga=GA1.1.1237231128.1741731549&semt=ais_hybrid)] bg-no-repeat bg-cover h-screen flex justify-center items-center m-[16px]">
+
+    <main class="w-full h-fit flex flex-col justify-center items-center md:w-[400px] lg:w-[600px] ">
+        <div id="logo" class="my-4 flex flex-col items-center">
+            <div id="img" class="w-[50px] md:w-[70px] h-[50px] md:h-[70px] overflow-hidden border rounded-xl border-blue-600">
+                <img src="https://img.freepik.com/free-vector/3d-style-indian-currency-rupee-sign-white-background-design_1017-44530.jpg?ga=GA1.1.1237231128.1741731549&semt=ais_hybrid" alt="">
+            </div>
+            <p class="font-bold text-center text-white p-3 md:text-20">Oceans 12 bank</p>
+            <div id="welcome" class="-gap-1">
+                <p class="text-center text-white p-3 md:text-20">welcome to Oceans 12 bank.<br> Please fill the form to create account.</p>
+            <p class="text-center text-white p-3 md:text-20"></p>
+            </div>
+        </div>
+        <div id="form" class="w-full h-full flex flex-col p-3 gap-4">
+            <form action="Post" class=" flex flex-col justify-center gap-4">
+                <div>
+                    <p id="fnError" class="text-red-400 hidden text-[15px] md:text-[18px] lg:text-[24px]">Please fill in First name</p>                
+                <input type="text" name="first name" id="fName" class="border border-gray-500 rounded-[8px] w-full p-1 text-[15px]" placeholder="First name" onkeydown="clearErr('fnError')">
+                </div>
+                <div>
+                    <p id="lnError" class="text-red-400 hidden text-[15px] md:text-[18px] lg:text-[24px]">Please fill in First name</p>                
+                <input type="text" name="first name" id="lName" class="border border-gray-500 rounded-[8px] w-full p-1 text-[15px]" placeholder="last name" onkeydown="clearErr('lnError')">
+                </div>
+                <div>
+                    <p id="eError" class="text-red-400 hidden text-[15px] md:text-[18px] lg:text-[24px]">Please fill in First name</p>                
+                <input type="text" name="first name" id="email" class="border border-gray-500 rounded-[8px] w-full p-1 text-[15px]" placeholder="Email" onkeydown="clearErr('eError')">
+                </div>
+                <div>
+                    <p id="dobError" class="text-red-400 hidden text-[15px] md:text-[18px] lg:text-[24px]">Please fill in date of birth</p>                
+                <input type="date" name="Dob" id="dob" class="border border-gray-500 rounded-[8px] w-full p-1 text-[15px]" onkeydown="clearErr('dobError')">
+                </div>
+                <div>               
+                <input type="text" name="referral" id="reff" class="border border-gray-500 rounded-[8px] w-full p-1 text-[15px]" placeholder="referral code">
+                </div>
+                <div>
+                    <p id="passError" class="text-red-400 hidden text-[15px] md:text-[18px] lg:text-[24px]">Please fill in password</p>                
+                <input type="password" name="password" id="pass" class="border border-gray-500 rounded-[8px] w-full p-1 text-[15px]" placeholder="please fill in password" onkeydown="clearErr('passError')">
+                </div>
+                <div>
+                    <p id="conPassError" class="text-red-400 hidden text-[15px] md:text-[18px] lg:text-[24px]">Please confirm password</p>                
+                <input type="password" name="confirm password" id="conPass" class="border border-gray-500 rounded-[8px] w-full p-1 text-[15px]" placeholder="please confirm password" onkeydown="clearErr('conPassError')">
+                <p id="passCheck" class="text-red-400 hidden text-[15px] md:text-[18px] lg:text-[24px]">Password does not match!!</p> 
+                </div>
+                 
+            </form>
+            <button type="submit" id="submitBtn" class="border bg-blue-900 border-white rounded-[8px] w-full p-1 text-[15px] text-white">Submit</button>
+        </div>
+        <div id="tologin">
+            <p class="text-white">Already have an account? &nbsp; <span class="text-blue-400 font-bold"><a href="login.html">Login</a></span></p>
+        </div>
+    </main>
+<script src="/build/script/signup.js"></script>
+
+</body>
+</html>

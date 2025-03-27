@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="/build/css/style.css">
+</head>
+<body class="bg-[url(https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-54581.jpg?ga=GA1.1.1237231128.1741731549&semt=ais_hybrid)] bg-no-repeat bg-cover h-screen flex justify-center items-center m-[16px]">
+
+    <main class="w-full h-fit flex flex-col justify-center items-center md:w-[400px] lg:w-[600px] ">
+        <div id="logo" class="my-4 flex flex-col items-center">
+            <div id="img" class="w-[50px] md:w-[70px] h-[50px] md:h-[70px] overflow-hidden border rounded-xl border-blue-600">
+                <img src="https://img.freepik.com/free-vector/3d-style-indian-currency-rupee-sign-white-background-design_1017-44530.jpg?ga=GA1.1.1237231128.1741731549&semt=ais_hybrid" alt="">
+            </div>
+            <p class="font-bold text-center text-white p-3 md:text-20">Oceans 12 bank</p>
+            <div id="welcome" class="-gap-1">
+                <p class="text-center text-white p-3 md:text-20">welcome back to Oceans 12 bank.<br> Please complete login details to gain access to your account.</p>
+            <p class="text-center text-white p-3 md:text-20"></p>
+            </div>
+        </div>
+        <div id="form" class="w-full h-full flex flex-col p-3 gap-4">
+            <form action="Post" class=" flex flex-col justify-center gap-4">
+                <div>
+                    <p id="accErr" class="text-red-400 hidden text-[15px] md:text-[18px] lg:text-[24px]">Please fill in Account number</p>                
+                <input type="text" name="first name" id="accnum" class="border border-gray-500 rounded-[8px] w-full p-1 text-[15px]" placeholder="Account Number" onkeydown="clearErr('accErr')">
+                </div>
+                
+                <div>
+                    <p id="passError" class="text-red-400 hidden text-[15px] md:text-[18px] lg:text-[24px]">Please fill in password</p>                
+                <input type="password" name="password" id="pass" class="border border-gray-500 rounded-[8px] w-full p-1 text-[15px]" placeholder="please fill in password" onkeydown="clearErr('passError')">
+                <p id="IncorrectPass" class="text-red-400 hidden text-[15px] md:text-[18px] lg:text-[24px]">Incorrect Password!!</p> 
+                </div>
+                 
+            </form>
+            <button type="submit" id="submitBtn" class="border bg-blue-900 border-white rounded-[8px] w-full p-1 text-[15px] text-white">Submit</button>
+        </div>
+        <div id="toSignup">
+            <p class="text-white">Don't have an account? &nbsp; <span class="text-blue-400 font-bold"><a href="signup.html">Signup</a></span></p>
+        </div>
+    </main>
+<script src="/build/script/login.js"></script>
+
+</body>
+</html>
