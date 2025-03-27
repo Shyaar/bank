@@ -34,7 +34,7 @@ else{
             }
             else{
                 localStorage.setItem("loggedInUser", JSON.stringify(user))
-                window.location.href = "bank.html"
+                window.location.href = "index.html"
             }
         }
 }
